@@ -1,6 +1,7 @@
 
 
-import * as basicLightbox from 'basiclightbox';
+import SimpleLightbox from "simplelightbox";
+import "simplelightbox/dist/simple-lightbox.min.css";
 
 const images = [
     {
@@ -87,21 +88,27 @@ const markup = images.map(({preview, original, description}) =>
 
 gallery.insertAdjacentHTML('beforeend', markup);
 
-gallery.addEventListener('click', handleModalOpen);
+// gallery.addEventListener('click', handleModalOpen);
 
-function handleModalOpen(event) {
-  event.preventDefault();
-  if (event.currentTarget === event.target) return;
+// function handleModalOpen(event) {
+//   event.preventDefault();
+//   if (event.currentTarget === event.target) return;
 
- const currentImage = event.target.dataset.source;
+//  const currentImage = event.target.dataset.source;
  
- console.log(currentImage);
+//  console.log(currentImage);
 
-  const instance = basicLightbox.create(`<div>
-  <img
-    src="${currentImage}"
-  />
-</div>`);
+//   const instance = basicLightbox.create(`<div>
+//   <img
+//     src="${currentImage}"
+//   />
+// </div>`);
 
-instance.show();
-};
+// instance.show();
+// };
+
+const lightbox = new SimpleLightbox('.gallery a', {
+  captions: true,
+  captionsData: 'alt',
+  captionDelay: 250,
+});
