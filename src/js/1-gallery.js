@@ -88,25 +88,6 @@ const markup = images.map(({preview, original, description}) =>
 
 gallery.insertAdjacentHTML('beforeend', markup);
 
-// gallery.addEventListener('click', handleModalOpen);
-
-// function handleModalOpen(event) {
-//   event.preventDefault();
-//   if (event.currentTarget === event.target) return;
-
-//  const currentImage = event.target.dataset.source;
- 
-//  console.log(currentImage);
-
-//   const instance = basicLightbox.create(`<div>
-//   <img
-//     src="${currentImage}"
-//   />
-// </div>`);
-
-// instance.show();
-// };
-
 const lightbox = new SimpleLightbox('.gallery a', {
   captions: true,
   captionsData: 'alt',

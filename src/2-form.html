@@ -8,9 +8,25 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <section class="nav-section">
-      <h1>Welcome to Form!</h1>
+
+    <div class="section">
+    <section class="form-section">
+      <h1 class="nav-welcome">Welcome to Form!</h1>
+
+      <form class="feedback-form" autocomplete="off">
+        <label>
+          Email
+          <input type="email" name="email" autofocus />
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="8"></textarea>
+        </label>
+        <button type="submit">Submit</button>
+      </form>
+    
       <a href="./index.html"><button type="button" class="nav-button">Go to home</button></a>
     </section>
+  </div>
   </body>
 </html>
