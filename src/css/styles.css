@@ -124,6 +124,7 @@ body {
   border-radius: 4px;
   font-size: 16px;
   box-sizing: border-box;
+  resize: none;
 }
 
 .feedback-form button[type="submit"] {
@@ -137,5 +138,9 @@ body {
   font-size: 16px;
   cursor: pointer;
   text-align: center;
-  transition: background-color 0.3s;
+  transition: box-shadow 0.3s ease;
+}
+
+.feedback-form button[type="submit"]:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7), inset 0 0 20px rgba(0, 0, 0, 0.7);
 }
