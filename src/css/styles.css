@@ -9,9 +9,15 @@
 /* @import url('./vite-promo.css');
 @import url('./header.css'); */
 
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
 body {
   background-color: beige;
-  margin: 0;
 }
 
 :root {
@@ -40,8 +46,8 @@ body {
 
 .nav-welcome {
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding-top: 30px;
+  margin-bottom: 30px;
 }
 
 
@@ -53,7 +59,7 @@ body {
   border: none;
   color: azure;
   transition: box-shadow 0.3s ease;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-right: auto;
   margin-left: auto;
 }
