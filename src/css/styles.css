@@ -38,13 +38,24 @@ body {
   gap: 20px;
 }
 
+.nav-welcome {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
 .nav-button {
+  display: block;
   background-color: #3246a8;
   border-radius: 20px;
   padding: 30px;
   border: none;
   color: azure;
   transition: box-shadow 0.3s ease;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .nav-button:hover {
